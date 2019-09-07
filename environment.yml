@@ -1,0 +1,9 @@
+name: pcpunmsm
+channels:
+  - conda-forge
+dependencies:
+  - sympy
+  - mpmath
+  - numpy
+  - matplotlib
+  - ipywidgets
