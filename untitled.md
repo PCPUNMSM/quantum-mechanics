@@ -1,10 +1,10 @@
 # Una introducción simple a los *Métodos Numéricos* para `@mistyblunch`
 
-Hace ya algunos años que debí de escribir estas notas. Como dicen "más vale tarde que nunca", aquí vamos. Lo siento, `@mistyblunch`, por tanto retraso.
+Hace ya algunos años que debí de escribir estas notas. Como dicen "más vale tarde que nunca", aquí vamos. Lo siento, @mistyblunch, por tanto retraso.
 
-Al momento que escribo esto, `@mistyblunch` ya está en la universidad; posiblemente en su 2<sup>do</sup> o 3<sup>er</sup> ciclo. Pero cuando quise escribir esto, originalmente, recién salía de la escuela. Espero que estas notas cumplan con otros jóvenes lo que esperaba que cumplieran con `@mistyblunch`: Motivar su curiosidad por la mátematica, la computación y la física.
+Al momento que escribo esto, @mistyblunch ya está en la universidad; posiblemente en su 2<sup>do</sup> o 3<sup>er</sup> ciclo. Pero cuando quise escribir esto, originalmente, recién salía de la escuela. Espero que estas notas cumplan con otros jóvenes lo que esperaba que cumplieran con @mistyblunch: Motivar su curiosidad por la mátematica, la computación y la física.
 
-###### Definiciones simples
+## Definiciones simples
 
 De la escuela conocemos las definiciones de velocidad y aceleración:
 
@@ -21,28 +21,28 @@ $$
 \mathbf{a} = \frac{\mathbf{v}_f - \mathbf{v}_i}{t_f - t_i}
 $$
 
-Ademas tambien nos enseñaron la llamada _Segunda Ley de Newton_ en forma de ecuación
+Ademas tambien nos enseñaron la llamada "Segunda ley de newton" en forma de ecuación
 
 $$
 \mathbf{F} = m\mathbf{a}
 $$
 
-Resulta fantástico saber que con estas tres expresiones y un poco de creatividad podemos precedir el futuro.
+Resulta fantástico saber que con estas tres expresiones y un poco de creatividad y manipulaciones algebraicas podemos precedir el futuro!
 
-###### ¿Qué son y para que nos sirven los modelos fisicos?
+## ¿Qué son y para que nos sirven los modelos fisicos?
 
-Resulta que la llamada _Segunda Ley de Newton_ es una relacion universal que nos dice como se mueve el mundo. Podemos obtener toda clase de resultados a partir de ella. Tal vez el más importante es la predicion del futuro.
+La verdad es que la llamada Segunda Ley de Newton es una relacion universal que nos dice como se mueve el mundo. Podemos obtener toda clase de resultados a partir de ella. Tal vez el mas importante es la predicion del futuro.
 
-En la expresión de la _Segunda Ley de Newton_
-
-$$
-\mathbf{F} = m\mathbf{a}
-$$
-
-sustituimos la _definición_ de la aceleración
+En la expresion
 
 $$
-\frac{\mathbf{F}}{m} = \frac{\mathbf{v}_f - \mathbf{v}_i}{t_f - t_i}
+m\mathbf{a} = \mathbf{F}
+$$
+
+sustituimos lo que entendemos como la "definición" de la aceleración
+
+$$
+\frac{\mathbf{v}_f - \mathbf{v}_i}{t_f - t_i} = \frac{\mathbf{F}}{m}
 $$
 
 de donde despejamos los $\mathbf{v}_f$
@@ -51,20 +51,20 @@ $$
 \mathbf{v}_f = \mathbf{v}_i + \frac{\mathbf{F}}{m}\left(t_f - t_i\right)
 $$
 
-Tambien despejamos $x_f$ en la _definición_ de velocidad de modo que
+Tambien despejamos $x_f$ en la "definición" de velocidad de modo que
 
 $$
 \mathbf{x}_f = \mathbf{x}_i + \mathbf{v}\left(t_f - t_i\right)
 $$
 
-En ambas expresiones consideremos hagamos $\Delta t_i = t_i - t_f$, de modo que el par de ecuaciones obtenidas resulta
+En ambas expresiones consideremos que $t_i = 0$, $t_f = t$, $\mathbf{x} = \mathbf{x}_f$ y $\mathbf{v} = \mathbf{v}_f$ de forma que obtenemos el par de ecuaciones
 
 $$
-\mathbf{v} = \mathbf{v}_i + \frac{\mathbf{F}}{m} \Delta t
+\mathbf{v} = \mathbf{v}_i + \frac{\mathbf{F}}{m} t
 $$
 
 $$
-\mathbf{x} = \mathbf{x}_i + \mathbf{v} \Delta t
+\mathbf{x} = \mathbf{x}_i + \mathbf{v} t
 $$
 
 Estas expresiones nos permiten conocer $\mathbf{x}$ y $\mathbf{v}$ en cualquier instante $t$ si es que conocemos $\mathbf{x}_i$ y $\mathbf{v}_i$. Es decir, si conocemos los valorezs de $\mathbf{x}_i$ y $\mathbf{v}_i$, ademas de la fuerza $\mathbf{F}$, podemos determinar $\mathbf{x}$ y $\mathbf{v}$ en cualquier instante $t$: Podemos predecir el futuro.
